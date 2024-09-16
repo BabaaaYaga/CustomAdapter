@@ -11,7 +11,7 @@ export class SimpleWalletAdapter extends BaseWalletAdapter {
       ]);
     private _publicKey: PublicKey | null = null;
     private _connecting: boolean = false;
-    private _readyState: WalletReadyState = WalletReadyState.Loadable;
+    private _readyState: WalletReadyState = WalletReadyState.Installed;
     private popup: Window | null = null;
     private overlayIframe: HTMLIFrameElement | null = null;
     private popupCloseInterval: number | null = null;
