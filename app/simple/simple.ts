@@ -26,8 +26,8 @@ export class SimpleWalletAdapter extends BaseWalletAdapter {
         return this._connecting;
     }
     get readyState(): WalletReadyState {
-        return this._readyState;
-    }
+    return WalletReadyState.Unsupported;  // This ensures the wallet is placed under "Show More" options
+}
 
     async connect(): Promise<void> {
         if (this.popup) {
